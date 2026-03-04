@@ -1,0 +1,5 @@
+{
+    "python.analysis.extraPaths": [
+        "./applications/req_chaves/models"
+    ]
+}

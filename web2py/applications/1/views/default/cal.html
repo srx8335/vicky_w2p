@@ -1,0 +1,58 @@
+
+{{extend 'layout.html'}}
+
+<style>
+.myclass{
+    background-color: white;
+
+}
+#calendar .fc-agenda-axis, #calendar .fc-widget-header {
+  background-color: #C2E6FF;
+  border-color: #AED0EA;
+  font-weight: normal;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+ 
+  border-radius: 3px ;
+}
+#calendar .fc-event {
+  box-shadow: 2px 2px 2px #706868;
+
+}
+.fc-today {
+   background-color: #C2E6FF;
+}
+.fc-day-number {
+    font-size: 14px;
+}
+.fc-content{
+    text-align:right ;
+    cursor:pointer;
+}
+.fc h2 {
+   font-size: 20px;
+}
+.fc-scroller {
+   overflow-y: hidden !important;
+}
+</style>
+
+
+    <div id='calendar'></div>
+
+
+    <link href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var calendarEl = document.getElementById('calendar');
+
+            var calendar = new FullCalendar.Calendar(calendarEl, {
+                initialView: 'dayGridMonth',
+                locale: 'pt',
+                events: '{{=URL("default", "eventos")}}'
+            });
+
+            calendar.render();
+        });
+    </script>

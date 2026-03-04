@@ -1,0 +1,124 @@
+{{extend 'plugin_adminlte/layout_starter.html'}}
+{{response.files.append(URL('static', 'css/listar_carros.css'))}}
+
+
+
+
+<div class='header-carros'>
+    <h2>Listar Carros</h2>
+    <a class="btnAdd" href="{{=URL('default', 'adicionar')}}">Adicionar Carro</a>
+</div>
+
+
+
+
+
+<table class="listar_carros table">
+    <thead>
+        <tr>
+            <th>Marca</th>
+            <th>Modelo</th>
+            <th>Ano</th>
+            <th>Cor</th>
+            <th>Matrícula</th>
+            <th>Descrição</th>
+            <th>Ações</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{for carro in carros:}}
+            <tr>
+                <td>{{=carro.Marca}}</td>
+                <td>{{=carro.Modelo}}</td>
+                <td>{{=carro.Ano}}</td>
+                <td>{{=carro.Cor}}</td>
+                <td>{{=carro.Matricula}}</td>
+                <td>{{=carro.Descricao}}</td>
+                <td>
+                    <a href="{{=URL('default', 'editar_carro', args=[carro.id])}}" class="listar_carros editar">Editar</a>  |
+                    <a href="{{=URL('default', 'apagar_carro', args=[carro.id])}}" class="listar_carros apagar" >Excluir</a>
+                </td>
+            </tr>
+        {{pass}}
+    </tbody>
+</table>
+
+<div id="popupConfirm" class="popup-overlay">
+  <div class="popup-content">
+    <p>⚠️ Tens a certeza que queres eliminar este carro?</p>
+    <button id="confirmDelete" class="btnDelete">Sim</button>
+    <button id="cancelDelete" class="btnCancel">Cancelar</button>
+  </div>
+</div>
+
+{{block page_js}}
+
+<!-- efeito slide in na tabela -->
+<script>
+    $(document).ready(function(){
+    // Aplica a classe "slide-in" a todas as linhas da tabela
+    $(".listar_carros tbody tr").each(function(index) {
+        $(this).delay(100 * index).queue(function(next){
+            $(this).addClass("slide-in");
+            next();
+        });
+    });
+});
+</script>
+
+
+<!-- abrir pop up quando se carrega em excluir -->
+
+<script>
+  let deleteUrl = ""; //variavel para armazenar o url
+
+  $(document).ready(function(){ //Esperar que o docuemnto esteja pronto
+    // Quando clicas em "Excluir"
+    $(".apagar").click(function(e){ 
+      e.preventDefault(); //preventDefault previne o comportamento padrão do link
+      deleteUrl = $(this).attr('href'); // Guarda o URL para redirecionar depois
+      $("#popupConfirm")
+        .fadeIn(400) //Mostra o popup
+        .css("display", "flex");
+        
+    });
+
+    $("#cancelDelete").click(function(){  //ao Clicar em cancelar
+      $("#popupConfirm").fadeOut(200); //Esconde o popup
+      deleteUrl = ""; //Limpa a variavel do URL 
+    });
+
+    $("#confirmDelete").click(function(){ //ao clicar em confirmar
+      if (deleteUrl) { //verificar se a variavel do URL está preenchida
+        window.location.href = deleteUrl; //redirecionar para o URL
+      }
+    });
+  });
+</script>
+
+<!-- efeito de suspiro quando se carrega no botao de cancelar do pop up -->
+<script>
+$("#cancelDelete").click(function () {
+  const btn = $(this);
+  const offset = btn.offset();
+  const sopro = $("<div class='sopro'>💨</div>");
+
+  sopro.css({
+    top: offset.top + btn.height() / 2,
+    left: offset.left + btn.width(),
+  });
+
+  $("body").append(sopro);
+
+  setTimeout(() => {
+    sopro.remove();
+  }, 1000);
+
+  $("#popupConfirm").fadeOut(200);
+  deleteUrl = "";
+});
+
+</script>
+
+
+{{end}}

@@ -1,0 +1,22 @@
+{{extend 'plugin_adminlte/layout_starter.html'}}
+{{response.files.append(URL('static', 'css/btn.css'))}}
+{{response.files.append(URL('static', 'css/listar_carros.css'))}}
+
+<style>
+    .web2py-menu-vertical li.web2py-menu-active > a {
+    color: rgb(51, 3, 71) !important; /* força a cor do texto */
+    font-weight: bold !important;
+}
+
+.web2py-menu-active > a {
+    color: rgb(51, 3, 71) !important; /* força a cor do texto */
+    font-weight: bold !important;
+}
+
+</style>
+
+<h2>Adicionar Carro</h2>
+
+{{=form}}
+
+

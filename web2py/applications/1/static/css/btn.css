@@ -1,0 +1,84 @@
+
+.btnAdd {
+    all: unset;
+    padding: 10px 20px;
+    background-color: rgb(51, 3, 71);
+    color: white;
+    border: none;
+    border-radius: 15px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btnAdd:hover {
+    background-color: rgb(37, 2, 51);
+    transform: scale(1.05);
+}
+
+.btnAdd:active {
+    transform: scale(0.95);
+    transition: transform 0.1s ease;
+    animation: glitterClick 0.4s ease;
+}
+
+@keyframes glitterClick {
+    0% {
+        box-shadow: 0 0 0px #9500ff, 0 0 0px #440254;
+        transform: scale(0.95);
+    }
+    50% {
+        box-shadow: 0 0 15px #9500ff, 0 0 25px #440254;
+    }
+    100% {
+        box-shadow: 0 0 0px #9500ff, 0 0 0px #440254;
+        transform: scale(1);
+    }
+}
+
+@keyframes apontar {
+    0%   { transform: translateX(0); }
+    50%  { transform: translateX(-10px); }
+    100% { transform: translateX(0); }
+}
+
+@keyframes glitterClick {
+    0% {
+        box-shadow: 0 0 0px #9500ff, 0 0 0px #440254;
+        transform: scale(0.95);
+    }
+    50% {
+        box-shadow: 0 0 15px #9500ff, 0 0 25px #440254;
+    }
+    100% {
+        box-shadow: 0 0 0px #9500ff, 0 0 0px #440254;
+        transform: scale(1);
+    }
+}
+
+.btnVoltar {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: rgb(51, 3, 71);
+  color: white;
+  text-decoration: none;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+}
+
+.btnVoltar:hover {
+  background-color: rgb(37, 2, 51);
+  color: white;
+  text-decoration: none;
+  animation: apontar 2s infinite alternate;
+}
+
+.btnVoltar:active {
+  animation: glitterClick 0.4s ease;
+}
+
+#submit_record__row > .col-sm-9.col-sm-offset-3 {
+  margin-left: 0 !important; /* remove offset */
+  padding-left: 10px 20px !important; /* remove padding se existir */
+  width: auto; /* deixa o div encaixar ao conteúdo */
+}

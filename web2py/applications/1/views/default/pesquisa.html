@@ -1,0 +1,38 @@
+{{extend 'plugin_adminlte/layout_starter.html'}}
+
+
+
+<div class='header-carros'>
+    <h2>Procurar Carros</h2>
+</div>
+
+<table class="listar_carros table">
+    <thead>
+        <tr>
+            <th>Marca</th>
+            <th>Modelo</th>
+            <th>Ano</th>
+            <th>Cor</th>
+            <th>Matrícula</th>
+            <th>Descrição</th>
+            <th>Ações</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{for carro in carros:}}
+            <tr>
+                <td>{{=carro.Marca}}</td>
+                <td>{{=carro.Modelo}}</td>
+                <td>{{=carro.Ano}}</td>
+                <td>{{=carro.Cor}}</td>
+                <td>{{=carro.Matricula}}</td>
+                <td>{{=carro.Descricao}}</td>
+                <td>
+                    <a href="{{=link_plataforma + carro.Marca}}%20{{=carro.Modelo}}%20{{=carro.Ano}}" class="listar_carros editar">Procurar Online</a>
+                </td>
+            </tr>
+        {{pass}}
+    </tbody>
+</table>
+
+
