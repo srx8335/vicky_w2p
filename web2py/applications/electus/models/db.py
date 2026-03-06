@@ -9,6 +9,8 @@ from gluon.tools import Auth
 import os
 import re
 
+from web2py.gluon.packages.pydal.pydal.objects import Field
+
 REQUIRED_WEB2PY_VERSION = "3.0.10"
 
 # -------------------------------------------------------------------------
@@ -154,7 +156,22 @@ if configuration.get("scheduler.enabled"):
 # >>> rows = db(db.mytable.myfield == "value").select(db.mytable.ALL)
 # >>> for row in rows: print row.id, row.myfield
 # -------------------------------------------------------------------------
- 
+ db.define_table("client",
+                 Field("name", "string", max_length=50),
+                 Field("status", "string", requires=IS_IN_SET(["Past", "Lead", "Active"])),
+                 Field("phone",
+                       "string",
+                       length=16,
+                       requires=IS_MATCH(
+                            r"^\+[1-9]\d{7,14}$",
+                            error_message="Use formato E.164: +351912345678"
+                       )
+                      ),
+                 Field("email", "string"),
+                 Field("ltv", "double"),
+                 Field("lead_src", "string", requires=IS_IN_SET(["Past", "Lead", "Active"])),
+                 
+                )
 # -------------------------------------------------------------------------
 # after defining tables, uncomment below to enable auditing
 # -------------------------------------------------------------------------
