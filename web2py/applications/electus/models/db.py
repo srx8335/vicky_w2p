@@ -217,7 +217,7 @@ for field in db.project.fields:
 
 db.define_table("task",
                 Field("task_name", "string"),
-                Field("status", "string", requires=IS_IN_SET(["Not Started", "In Progress", "Done"]), default="Not Started"),
+                Field("task_status", "string", requires=IS_IN_SET(["Not Started", "In Progress", "Done"]), default="Not Started"),
                 Field("project_id", "reference project"),
                 Field("deadline", "date"),
                 Field("service_id", "reference service"),

@@ -95,3 +95,5 @@ CREATE TABLE "project"(
     "status" CHAR(512)
 );
 success!
+success!
+success!
