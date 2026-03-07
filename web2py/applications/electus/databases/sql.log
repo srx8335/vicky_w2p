@@ -80,3 +80,18 @@ success!
 timestamp: 2026-03-07T18:11:40.070722
 ALTER TABLE "service" ADD "service_name" CHAR(512);
 success!
+success!
+success!
+timestamp: 2026-03-07T18:16:37.396299
+CREATE TABLE "project"(
+    "id" INTEGER PRIMARY KEY AUTOINCREMENT,
+    "project_name" CHAR(512),
+    "client_id" INTEGER REFERENCES "client" ("id") ON DELETE CASCADE ON UPDATE CASCADE  ,
+    "service_id" INTEGER REFERENCES "service" ("id") ON DELETE CASCADE ON UPDATE CASCADE  ,
+    "deadline" DATE,
+    "project_value" DOUBLE,
+    "progress" DOUBLE,
+    "description" TEXT,
+    "status" CHAR(512)
+);
+success!
