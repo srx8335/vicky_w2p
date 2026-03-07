@@ -155,7 +155,7 @@ if configuration.get("scheduler.enabled"):
 # >>> for row in rows: print row.id, row.myfield
 # -------------------------------------------------------------------------
 db.define_table("client",
-                 Field("name", "string", max_length=50),
+                 Field("client_name", "string", max_length=50),
                  Field("status", "string", requires=IS_IN_SET(["Past", "Lead", "Active"])),
                  Field("phone",
                        "string",
@@ -181,7 +181,7 @@ for field in db.client.fields:
 
 
 db.define_table("service",
-                 Field("name", "string", max_length=50),
+                 Field("service_name", "string", max_length=50),
                  Field("base_price", "double", default=0.0),
                  Field("service_type", "string", requires=IS_IN_SET(["Retainer(monthly)", "One-off Project"])),
                  Field("description", "text", max_length=1000),
@@ -197,7 +197,7 @@ for field in db.service.fields:
 
 
 db.define_table("project",
-                 Field("name", "string", max_length=50),
+                 Field("project_name", "string", max_length=50),
                  Field("client_id", "reference client"),
                  Field("service_id", "reference service"),
                  Field("deadline", "date"),
@@ -216,7 +216,7 @@ for field in db.project.fields:
 
 
 db.define_table("task",
-                Field("Name", "string"),
+                Field("task_name", "string"),
                 Field("status", "string", requires=IS_IN_SET(["Not Started", "In Progress", "Done"]), default="Not Started"),
                 Field("project_id", "reference project"),
                 Field("deadline", "date"),
@@ -232,7 +232,7 @@ for field in db.task.fields:
         db.task[field].requires = IS_NOT_EMPTY(error_message="Campo obrigatório")
 
 db.define_table("deliverable_type",
-                Field("name", "string", max_length=50, unique=True, requires=IS_NOT_EMPTY(error_message="Campo obrigatório")),
+                Field("deliverable_type_name", "string", max_length=50, unique=True, requires=IS_NOT_EMPTY(error_message="Campo obrigatório")),
                )
 
 db.define_table("service_deliverable_type",
