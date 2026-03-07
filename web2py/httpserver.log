@@ -29406,3 +29406,7 @@ P/1.1, 200, 0.002061
 127.0.0.1, 2026-03-07 18:19:57, GET, /electus/static/images/background.jpg, HTTP/1.1, 404, 0.000000
 127.0.0.1, 2026-03-07 18:19:57, GET, /electus/static/images/favicon.ico, HTTP/1.1, 200, 0.009233
 127.0.0.1, 2026-03-07 18:19:57, GET, /electus/static/images/favicon.png, HTTP/1.1, 200, 0.009233
+127.0.0.1, 2026-03-07 18:19:59, GET, /admin/default/index, HTTP/1.1, 303, 0.005952
+127.0.0.1, 2026-03-07 18:19:59, GET, /admin/default/site, HTTP/1.1, 200, 0.046325
+127.0.0.1, 2026-03-07 18:20:01, GET, /electus/default/index, HTTP/1.1, 200, 0.131125
+127.0.0.1, 2026-03-07 18:20:01, GET, /electus/default/index, HTTP/1.1, 200, 0.139204

@@ -133,3 +133,7 @@ CREATE TABLE "project_task"(
     "task_id" INTEGER REFERENCES "task" ("id") ON DELETE CASCADE ON UPDATE CASCADE  
 );
 success!
+success!
+success!
+success!
+success!
