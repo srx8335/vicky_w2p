@@ -29367,3 +29367,15 @@ P/1.1, 200, 0.002061
 127.0.0.1, 2026-03-07 18:03:09, GET, /admin/default/ticket/electus/127.0.0.1.2026-03-07.18-03-07.b1ec3c79-ddea-44b0-8b86-7aae044f6bec, HTTP/1.1, 200, 0.054377
 127.0.0.1, 2026-03-07 18:03:34, GET, /admin/default/ticket/electus/127.0.0.1.2026-03-07.17-59-29.1c368cc1-818b-4903-aad3-bfac38120338, HTTP/1.1, 200, 0.045153
 127.0.0.1, 2026-03-07 18:03:51, GET, /admin/default/ticket/electus/127.0.0.1.2026-03-07.18-03-07.b1ec3c79-ddea-44b0-8b86-7aae044f6bec, HTTP/1.1, 200, 0.048835
+127.0.0.1, 2026-03-07 18:06:13, GET, /electus/default/index, HTTP/1.1, 500, 0.059641
+127.0.0.1, 2026-03-07 18:06:16, GET, /electus/default/index, HTTP/1.1, 500, 0.042606
+127.0.0.1, 2026-03-07 18:06:16, GET, /favicon.ico, HTTP/1.1, 400, 0.000000
+127.0.0.1, 2026-03-07 18:06:28, GET, /, HTTP/1.1, 303, 0.001227
+127.0.0.1, 2026-03-07 18:06:28, GET, /welcome/default/index, HTTP/1.1, 200, 0.015445
+127.0.0.1, 2026-03-07 18:06:28, GET, /welcome/static/images/background.jpg, HTTP/1.1, 404, 0.000000
+127.0.0.1, 2026-03-07 18:06:30, GET, /admin/default/index, HTTP/1.1, 303, 0.005141
+127.0.0.1, 2026-03-07 18:06:30, GET, /admin/default/site, HTTP/1.1, 200, 0.049348
+127.0.0.1, 2026-03-07 18:06:31, GET, /electus/default/index, HTTP/1.1, 500, 0.019083
+127.0.0.1, 2026-03-07 18:06:32, GET, /electus/default/index, HTTP/1.1, 500, 0.020584
+127.0.0.1, 2026-03-07 18:06:33, GET, /admin/default/ticket/electus/127.0.0.1.2026-03-07.18-06-31.81e6d26f-0be7-4c77-b030-62aa2b6ed489, HTTP/1.1, 200, 0.078209
+127.0.0.1, 2026-03-07 18:06:33, GET, /admin/static/_3.0.11/images/help.png, HTTP/1.1, 200, 0.007474

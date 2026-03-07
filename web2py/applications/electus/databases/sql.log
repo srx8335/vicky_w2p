@@ -64,3 +64,13 @@ CREATE TABLE "client"(
     "lead_src" CHAR(512)
 );
 success!
+timestamp: 2026-03-07T18:06:13.700350
+CREATE TABLE "service"(
+    "id" INTEGER PRIMARY KEY AUTOINCREMENT,
+    "name" CHAR(512),
+    "base_price" DOUBLE,
+    "service_type" CHAR(512),
+    "description" TEXT,
+    "status" CHAR(512)
+);
+success!

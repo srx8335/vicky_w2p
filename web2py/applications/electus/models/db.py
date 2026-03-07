@@ -183,7 +183,7 @@ for field in db.client.fields:
 db.define_table("service",
                  Field("name", "string", max_length=50),
                  Field("base_price", "double", default=0.0),
-                 Field("type", "string", requires=IS_IN_SET(["Retainer(monthly)", "One-off Project"])),
+                 Field("service_type", "string", requires=IS_IN_SET(["Retainer(monthly)", "One-off Project"])),
                  Field("description", "text", max_length=1000),
                  Field("status", "string", requires=IS_IN_SET(["Active", "Experimental", "Discontinued"])),
                 )
