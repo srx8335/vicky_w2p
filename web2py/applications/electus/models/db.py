@@ -213,6 +213,16 @@ for field in db.project.fields:
     if field not in exceptions:
         db.project[field].requires = IS_NOT_EMPTY(error_message="Campo obrigatório")
 
+db.define_table("deliverable_type",
+                Field("deliverable_type_name", "string", max_length=50, unique=True, requires=IS_NOT_EMPTY(error_message="Campo obrigatório")),
+               )
+
+db.define_table("service_deliverable_type",
+                Field("service_id", "reference service", requires=IS_NOT_EMPTY(error_message="Campo obrigatório")),
+                Field("deliverable_type_id", "reference deliverable_type", requires=IS_NOT_EMPTY(error_message="Campo obrigatório")),
+               )
+
+
 
 
 db.define_table("task",
@@ -231,21 +241,11 @@ for field in db.task.fields:
     if field not in exceptions:
         db.task[field].requires = IS_NOT_EMPTY(error_message="Campo obrigatório")
 
-db.define_table("deliverable_type",
-                Field("deliverable_type_name", "string", max_length=50, unique=True, requires=IS_NOT_EMPTY(error_message="Campo obrigatório")),
-               )
-
-db.define_table("service_deliverable_type",
-                Field("service_id", "reference service", requires=IS_NOT_EMPTY(error_message="Campo obrigatório")),
-                Field("deliverable_type_id", "reference deliverable_type", requires=IS_NOT_EMPTY(error_message="Campo obrigatório")),
-               )
-
 
 db.define_table("project_task",
                 Field("project_id", "reference project", requires=IS_NOT_EMPTY(error_message="Campo obrigatório")),
                 Field("task_id", "reference task", requires=IS_NOT_EMPTY(error_message="Campo obrigatório")),
                )
-
 
 # -------------------------------------------------------------------------
 # after defining tables, uncomment below to enable auditing

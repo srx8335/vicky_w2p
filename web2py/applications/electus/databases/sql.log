@@ -97,3 +97,39 @@ CREATE TABLE "project"(
 success!
 success!
 success!
+success!
+success!
+timestamp: 2026-03-07T18:19:08.564530
+CREATE TABLE "deliverable_type"(
+    "id" INTEGER PRIMARY KEY AUTOINCREMENT,
+    "deliverable_type_name" CHAR(512) UNIQUE
+);
+success!
+timestamp: 2026-03-07T18:19:08.574099
+CREATE TABLE "service_deliverable_type"(
+    "id" INTEGER PRIMARY KEY AUTOINCREMENT,
+    "service_id" INTEGER REFERENCES "service" ("id") ON DELETE CASCADE ON UPDATE CASCADE  ,
+    "deliverable_type_id" INTEGER REFERENCES "deliverable_type" ("id") ON DELETE CASCADE ON UPDATE CASCADE  
+);
+success!
+success!
+success!
+timestamp: 2026-03-07T18:19:57.583440
+CREATE TABLE "task"(
+    "id" INTEGER PRIMARY KEY AUTOINCREMENT,
+    "task_name" CHAR(512),
+    "task_status" CHAR(512),
+    "project_id" INTEGER REFERENCES "project" ("id") ON DELETE CASCADE ON UPDATE CASCADE  ,
+    "deadline" DATE,
+    "service_id" INTEGER REFERENCES "service" ("id") ON DELETE CASCADE ON UPDATE CASCADE  ,
+    "deliverable_type" INTEGER REFERENCES "deliverable_type" ("id") ON DELETE CASCADE ON UPDATE CASCADE  ,
+    "description" TEXT
+);
+success!
+timestamp: 2026-03-07T18:19:57.586627
+CREATE TABLE "project_task"(
+    "id" INTEGER PRIMARY KEY AUTOINCREMENT,
+    "project_id" INTEGER REFERENCES "project" ("id") ON DELETE CASCADE ON UPDATE CASCADE  ,
+    "task_id" INTEGER REFERENCES "task" ("id") ON DELETE CASCADE ON UPDATE CASCADE  
+);
+success!
