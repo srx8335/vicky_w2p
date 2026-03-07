@@ -161,20 +161,24 @@ db.define_table("client",
                  Field("status", "string", requires=IS_IN_SET(["Past", "Lead", "Active"])),
                  Field("phone",
                        "string",
-                       length=16,
+                       max_length=16,
                        requires=IS_MATCH(
                             r"^\+[1-9]\d{7,14}$",
                             error_message="Use formato E.164: +351912345678"
                        )
                       ),
                  Field("email", "string"),
-                 Field("ltv", "double"),
-                 Field("lead_src", "string", requires=IS_IN_SET(["Past", "Lead", "Active"])),
+                 Field("ltv", "double", default=0.0),
+                 Field("lead_src", "string", requires=IS_IN_SET(["Referral", "Instagram", "Cold Outreach", "Upwork", "Other"])),
                 )
 
 #torna todos os campos obrigatórios
+exceptions = ['phone', 'email']
+
 for field in db.client.fields:
-     db.client[field].requires = IS_NOT_EMPTY
+    if field not in exceptions:
+        db.emprestimo[field].requires = IS_NOT_EMPTY(error_message="Campo obrigatório")
+
 
 
 
@@ -184,7 +188,7 @@ db.define_table("service",
                  Field("type", "string", requires=IS_IN_SET(["Retainer(monthly)", "One-off Project"])),
                  Field("deliverables", "string", max_lenght=30),
                  Field("description", "text", max_length=1000),
-                 Field("status", "string", requires=IS_IN_SET(["Active", "Experimental"])),
+                 Field("status", "string", requires=IS_IN_SET(["Active", "Experimental", "Discontinued"])),
                 )
 
 #torna todos os campos obrigatórios menos Descricao
@@ -201,9 +205,14 @@ db.define_table("project",
                  Field("value", "double"),
                  Field("progress" "double", default=0.0),
                  Field("description", "text", max_length=1000),
-                 Field("status", "string", requires=IS_IN_SET(["In Progress", "Done", "Not Started"])),
+                 Field("status", "string", requires=IS_IN_SET(["In Progress", "Done", "Not Started"], default="Not Started")),
                 )
 
+exceptions = ['deadline', 'progress', 'description']
+
+for field in db.emprestimo.fields:
+    if field not in exceptions:
+        db.emprestimo[field].requires = IS_NOT_EMPTY(error_message="Campo obrigatório")
 
 # -------------------------------------------------------------------------
 # after defining tables, uncomment below to enable auditing
