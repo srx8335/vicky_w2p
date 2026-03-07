@@ -5,8 +5,10 @@
 # this is the main application menu add/remove items as required
 # ----------------------------------------------------------------------------------------------------------------------
 
+page = request.function
+
 response.menu = [
-    (T('Home'), False, URL('default', 'home'), [])
+    (T('Home'), page == 'home', URL('default', 'home'))
     (T('Finances'), False, URL('default', 'finances'), [])
     (T('Pipeline'), False, URL('default', 'pipeline'), [])
     (T('Clients'), False, URL('default', 'clients'), [])
