@@ -224,6 +224,7 @@
 'This email already has an account': 'This email already has an account',
 'Time in Cache (h:m:s)': 'Time in Cache (h:m:s)',
 'Timestamp': 'Timestamp',
+'Too short': 'Too short',
 'Traceback': 'Traceback',
 'Twitter': 'Twitter',
 'Two-step Login Authentication Code': 'Two-step Login Authentication Code',
