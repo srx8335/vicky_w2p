@@ -62,4 +62,5 @@ def download():
 
 
 def dashboard():
-    return dict()
+    test='test'
+    return dict(test=test)
