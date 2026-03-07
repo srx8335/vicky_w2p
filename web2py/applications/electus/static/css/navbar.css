@@ -1,6 +1,10 @@
+body{
+background-color: hsl(0, 0%, 20%);
+}
+
 .page_title {
     font-size: 30px;
     font-weight: bold;
-    color: hsl(90%, 90%, 96%);
+    color: hsl(0, 0%, 88%);
     margin: 3%;
 }
