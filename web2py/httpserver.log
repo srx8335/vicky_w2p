@@ -29410,3 +29410,15 @@ P/1.1, 200, 0.002061
 127.0.0.1, 2026-03-07 18:19:59, GET, /admin/default/site, HTTP/1.1, 200, 0.046325
 127.0.0.1, 2026-03-07 18:20:01, GET, /electus/default/index, HTTP/1.1, 200, 0.131125
 127.0.0.1, 2026-03-07 18:20:01, GET, /electus/default/index, HTTP/1.1, 200, 0.139204
+127.0.0.1, 2026-03-07 18:40:30, GET, /, HTTP/1.1, 303, 1.146238
+127.0.0.1, 2026-03-07 18:40:31, GET, /welcome/default/index, HTTP/1.1, 200, 0.906260
+127.0.0.1, 2026-03-07 18:40:31, GET, /welcome/static/images/background.jpg, HTTP/1.1, 404, 0.000000
+127.0.0.1, 2026-03-07 18:40:37, GET, /welcome/default/index, HTTP/1.1, 200, 0.014381
+127.0.0.1, 2026-03-07 18:40:40, GET, /admin/default/index, HTTP/1.1, 303, 0.778934
+127.0.0.1, 2026-03-07 18:40:40, GET, /admin/default/site, HTTP/1.1, 200, 0.255711
+127.0.0.1, 2026-03-07 18:40:40, GET, /admin/static/_3.0.11/images/questions.png, HTTP/1.1, 200, 0.011786
+127.0.0.1, 2026-03-07 18:40:40, GET, /admin/static/_3.0.11/images/folder.png, HTTP/1.1, 200, 0.008031
+127.0.0.1, 2026-03-07 18:40:40, GET, /admin/static/_3.0.11/images/folder_locked.png, HTTP/1.1, 200, 0.010039
+127.0.0.1, 2026-03-07 18:40:40, GET, /admin/static/_3.0.11/images/glyphicons-halflings-white.png, HTTP/1.1, 200, 0.010290
+127.0.0.1, 2026-03-07 18:40:45, GET, /electus/default/index, HTTP/1.1, 200, 0.777526
+127.0.0.1, 2026-03-07 18:40:45, GET, /electus/static/images/background.jpg, HTTP/1.1, 404, 0.000000
