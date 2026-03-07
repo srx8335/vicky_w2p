@@ -15,6 +15,12 @@ response.menu = [
     (T('Scripts'), False, URL('default', 'scripts'), [])
 ]
 
+response.menu = [
+    (T('Profile'), False, URL('default', 'profile'), [])
+    (T('Settings'), False, URL('default', 'settings'), [])
+    (T('Logout'), False, URL('default', 'logout'), [])
+]
+
 # ----------------------------------------------------------------------------------------------------------------------
 # provide shortcuts for development. you can remove everything below in production
 # ---------------------------------------------------------------------------------------------------------------------«~~«
