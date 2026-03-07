@@ -204,7 +204,7 @@ db.define_table("project",
                  Field("value", "double", default=0.0),
                  Field("progress" "double", default=0.0),
                  Field("description", "text", max_length=1000),
-                 Field("status", "string", requires=IS_IN_SET(["In Progress", "Done", "Not Started"], default="Not Started")),
+                 Field("status", "string", requires=IS_IN_SET(["In Progress", "Done", "Not Started"]), default="Not Started"),
                 )
 
 exceptions = ['deadline', 'progress', 'description']
@@ -217,7 +217,7 @@ for field in db.project.fields:
 
 db.define_table("task",
                 Field("Name", "string"),
-                Field("status", "string", requires=IS_IN_SET(["Not Started", "In Progress", "Done"], default="Not Started")),
+                Field("status", "string", requires=IS_IN_SET(["Not Started", "In Progress", "Done"]), default="Not Started"),
                 Field("project_id", "reference project"),
                 Field("deadline", "date"),
                 Field("service_id", "reference service"),
