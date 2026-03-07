@@ -172,28 +172,29 @@ db.define_table("client",
                  Field("lead_src", "string", requires=IS_IN_SET(["Referral", "Instagram", "Cold Outreach", "Upwork", "Other"])),
                 )
 
-#torna todos os campos obrigatórios
+#torna todos os campos obrigatórios menos as exceções
 exceptions = ['phone', 'email']
 
 for field in db.client.fields:
     if field not in exceptions:
-        db.emprestimo[field].requires = IS_NOT_EMPTY(error_message="Campo obrigatório")
+        db.client[field].requires = IS_NOT_EMPTY(error_message="Campo obrigatório")
 
 
 
 
 db.define_table("service",
                  Field("name", "string", max_length=50),
-                 Field("base_price", "double"),
+                 Field("base_price", "double", default=0.0),
                  Field("type", "string", requires=IS_IN_SET(["Retainer(monthly)", "One-off Project"])),
-                 Field("deliverables", "string", max_lenght=30),
                  Field("description", "text", max_length=1000),
                  Field("status", "string", requires=IS_IN_SET(["Active", "Experimental", "Discontinued"])),
                 )
 
-#torna todos os campos obrigatórios menos Descricao
+exceptions = ['description']
+
 for field in db.client.fields:
-     db.client[field].requires = IS_NOT_EMPTY
+    if field not in exceptions:
+        db.service[field].requires = IS_NOT_EMPTY(error_message="Campo obrigatório")
 
 
 
@@ -202,7 +203,7 @@ db.define_table("project",
                  Field("client_id", "reference client"),
                  Field("service_id", "reference service"),
                  Field("deadline", "date"),
-                 Field("value", "double"),
+                 Field("value", "double", default=0.0),
                  Field("progress" "double", default=0.0),
                  Field("description", "text", max_length=1000),
                  Field("status", "string", requires=IS_IN_SET(["In Progress", "Done", "Not Started"], default="Not Started")),
@@ -210,9 +211,9 @@ db.define_table("project",
 
 exceptions = ['deadline', 'progress', 'description']
 
-for field in db.emprestimo.fields:
+for field in db.project.fields:
     if field not in exceptions:
-        db.emprestimo[field].requires = IS_NOT_EMPTY(error_message="Campo obrigatório")
+        db.project[field].requires = IS_NOT_EMPTY(error_message="Campo obrigatório")
 
 # -------------------------------------------------------------------------
 # after defining tables, uncomment below to enable auditing
