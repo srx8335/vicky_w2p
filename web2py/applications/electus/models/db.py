@@ -9,7 +9,7 @@ from gluon.tools import Auth
 import os
 import re
 
-from web2py.gluon.packages.pydal.pydal.objects import Field
+import gluon
 
 REQUIRED_WEB2PY_VERSION = "3.0.10"
 
@@ -156,7 +156,7 @@ if configuration.get("scheduler.enabled"):
 # >>> rows = db(db.mytable.myfield == "value").select(db.mytable.ALL)
 # >>> for row in rows: print row.id, row.myfield
 # -------------------------------------------------------------------------
- db.define_table("client",
+db.define_table("client",
                  Field("name", "string", max_length=50),
                  Field("status", "string", requires=IS_IN_SET(["Past", "Lead", "Active"])),
                  Field("phone",
@@ -170,8 +170,28 @@ if configuration.get("scheduler.enabled"):
                  Field("email", "string"),
                  Field("ltv", "double"),
                  Field("lead_src", "string", requires=IS_IN_SET(["Past", "Lead", "Active"])),
-                 
                 )
+
+#torna todos os campos obrigatórios menos Descricao
+for field in db.client.fields:
+     db.client[field].requires = IS_NOT_EMPTY
+
+
+
+db.define_table("service",
+                 Field("name", "string", max_length=50),
+                 Field("base_price", "double"),
+                 Field("type", "string", requires=IS_IN_SET(["Retainer(monthly)", "One-off Project"])),
+                 Field("deliverables", "string", max_lenght=30),
+                 Field("description", "text", max_length=1000),
+                 Field("status", "string", requires=IS_IN_SET(["Active", "Experimental"])),
+                )
+
+#torna todos os campos obrigatórios menos Descricao
+for field in db.client.fields:
+     db.client[field].requires = IS_NOT_EMPTY
+
+
 # -------------------------------------------------------------------------
 # after defining tables, uncomment below to enable auditing
 # -------------------------------------------------------------------------
