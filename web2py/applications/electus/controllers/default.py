@@ -49,7 +49,7 @@ def user():
 
     #se o user estiver conseguir logar, redireciona para a página de listar#
     if auth.is_logged_in():
-        redirect(URL('default', 'dashboard'))
+        redirect(URL('default', 'home'))
 
     return dict(form=auth())
 # ---- action to server uploaded static content (required) ---
@@ -65,6 +65,6 @@ def download():
 
 
 
-def dashboard():
+def home():
     test='test'
     return dict(test=test)
