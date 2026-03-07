@@ -6,7 +6,7 @@
 
 # ---- example index page ----
 def index():
-    dashboard()
+    redirect(URL('default', 'user', args='login'))
 
 # ---- API (example) -----
 @auth.requires_login()
