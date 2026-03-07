@@ -215,6 +215,40 @@ for field in db.project.fields:
     if field not in exceptions:
         db.project[field].requires = IS_NOT_EMPTY(error_message="Campo obrigatório")
 
+
+
+db.define_table("task",
+                Field("Name", "string"),
+                Field("status", "string", requires=IS_IN_SET(["Not Started", "In Progress", "Done"], default="Not Started")),
+                Field("project_id", "reference project"),
+                Field("deadline", "date"),
+                Field("service_id", "reference service"),
+                Field("deliverable_type", "reference deliverable_type"),
+                Field("description", "text"),
+               )
+
+exceptions = ['project_id', 'deadline', 'description']
+
+for field in db.task.fields:
+    if field not in exceptions:
+        db.task[field].requires = IS_NOT_EMPTY(error_message="Campo obrigatório")
+
+db.define_table("deliverable_type",
+                Field("name", "string", max_length=50, unique=True, requires=IS_NOT_EMPTY(error_message="Campo obrigatório")),
+               )
+
+db.define_table("service_deliverable_type",
+                Field("service_id", "reference service", requires=IS_NOT_EMPTY(error_message="Campo obrigatório")),
+                Field("deliverable_type_id", "reference deliverable_type", requires=IS_NOT_EMPTY(error_message="Campo obrigatório")),
+               )
+
+
+db.define_table("project_task",
+                Field("project_id", "reference project"),
+                Field("task_id", "reference task"),
+               )
+
+
 # -------------------------------------------------------------------------
 # after defining tables, uncomment below to enable auditing
 # -------------------------------------------------------------------------
