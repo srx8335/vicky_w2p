@@ -190,7 +190,7 @@ db.define_table("service",
 
 exceptions = ['description']
 
-for field in db.client.fields:
+for field in db.service.fields:
     if field not in exceptions:
         db.service[field].requires = IS_NOT_EMPTY(error_message="Campo obrigatório")
 
@@ -242,8 +242,8 @@ db.define_table("service_deliverable_type",
 
 
 db.define_table("project_task",
-                Field("project_id", "reference project"),
-                Field("task_id", "reference task"),
+                Field("project_id", "reference project", requires=IS_NOT_EMPTY(error_message="Campo obrigatório")),
+                Field("task_id", "reference task", requires=IS_NOT_EMPTY(error_message="Campo obrigatório")),
                )
 
 
