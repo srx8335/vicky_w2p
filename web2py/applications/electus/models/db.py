@@ -172,7 +172,7 @@ db.define_table("client",
                  Field("lead_src", "string", requires=IS_IN_SET(["Past", "Lead", "Active"])),
                 )
 
-#torna todos os campos obrigatórios menos Descricao
+#torna todos os campos obrigatórios
 for field in db.client.fields:
      db.client[field].requires = IS_NOT_EMPTY
 
@@ -190,6 +190,19 @@ db.define_table("service",
 #torna todos os campos obrigatórios menos Descricao
 for field in db.client.fields:
      db.client[field].requires = IS_NOT_EMPTY
+
+
+
+db.define_table("project",
+                 Field("name", "string", max_length=50),
+                 Field("client_id", "reference client"),
+                 Field("service_id", "reference service"),
+                 Field("deadline", "date"),
+                 Field("value", "double"),
+                 Field("progress" "double", default=0.0),
+                 Field("description", "text", max_length=1000),
+                 Field("status", "string", requires=IS_IN_SET(["In Progress", "Done", "Not Started"])),
+                )
 
 
 # -------------------------------------------------------------------------
