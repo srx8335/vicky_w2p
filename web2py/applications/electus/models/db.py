@@ -7,9 +7,7 @@
 from gluon.contrib.appconfig import AppConfig
 from gluon.tools import Auth
 import os
-import re
 
-import gluon
 
 REQUIRED_WEB2PY_VERSION = "3.0.10"
 

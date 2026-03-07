@@ -29349,3 +29349,17 @@ P/1.1, 200, 0.002061
 127.0.0.1, 2026-03-04 12:34:36, GET, /req_chaves/static/js/web2py-bootstrap3.js, HTTP/1.1, 404, 0.000000
 127.0.0.1, 2026-03-04 12:34:36, GET, /req_chaves/static/css/web2py-bootstrap3.css, HTTP/1.1, 404, 0.000000
 127.0.0.1, 2026-03-04 12:34:37, GET, /req_chaves/static/js/web2py-bootstrap3.js, HTTP/1.1, 404, 0.000000
+127.0.0.1, 2026-03-07 17:59:03, GET, /, HTTP/1.1, 303, 0.914488
+127.0.0.1, 2026-03-07 17:59:04, GET, /welcome/default/index, HTTP/1.1, 200, 0.519133
+127.0.0.1, 2026-03-07 17:59:04, GET, /welcome/static/images/background.jpg, HTTP/1.1, 404, 0.000000
+127.0.0.1, 2026-03-07 17:59:21, GET, /admin/default/index, HTTP/1.1, 200, 0.289491
+127.0.0.1, 2026-03-07 17:59:21, GET, /admin/static/_3.0.11/images/questions.png, HTTP/1.1, 200, 0.009818
+127.0.0.1, 2026-03-07 17:59:22, POST, /admin/default/index, HTTP/1.1, 303, 0.036409
+127.0.0.1, 2026-03-07 17:59:22, GET, /admin/default/site, HTTP/1.1, 200, 0.107978
+127.0.0.1, 2026-03-07 17:59:22, GET, /admin/static/_3.0.11/images/folder.png, HTTP/1.1, 200, 0.007293
+127.0.0.1, 2026-03-07 17:59:22, GET, /admin/static/_3.0.11/images/folder_locked.png, HTTP/1.1, 200, 0.007293
+127.0.0.1, 2026-03-07 17:59:23, GET, /admin/static/_3.0.11/images/glyphicons-halflings-white.png, HTTP/1.1, 200, 0.042905
+127.0.0.1, 2026-03-07 17:59:23, POST, /admin/default/check_version, HTTP/1.1, 200, 0.987309
+127.0.0.1, 2026-03-07 17:59:29, GET, /electus/default/index, HTTP/1.1, 500, 0.366243
+127.0.0.1, 2026-03-07 17:59:31, GET, /admin/default/ticket/electus/127.0.0.1.2026-03-07.17-59-29.1c368cc1-818b-4903-aad3-bfac38120338, HTTP/1.1, 200, 0.113737
+127.0.0.1, 2026-03-07 18:00:12, GET, /electus/default/index, HTTP/1.1, 500, 0.040575
