@@ -29432,3 +29432,17 @@ P/1.1, 200, 0.002061
 127.0.0.1, 2026-03-07 18:57:21, GET, /electus/default/index, HTTP/1.1, 200, 0.074996
 127.0.0.1, 2026-03-07 18:57:21, GET, /favicon.ico, HTTP/1.1, 400, 0.000000
 127.0.0.1, 2026-03-07 18:57:25, GET, /electus/default/index, HTTP/1.1, 200, 0.031354
+127.0.0.1, 2026-03-07 19:00:14, GET, /electus/default/index, HTTP/1.1, 303, 0.067164
+127.0.0.1, 2026-03-07 19:00:14, GET, /electus/default/user/login, HTTP/1.1, 200, 0.135192
+127.0.0.1, 2026-03-07 19:00:14, GET, /electus/static/css/web2py-bootstrap4.css, HTTP/1.1, 200, 0.016965
+127.0.0.1, 2026-03-07 19:00:14, GET, /electus/static/css/bootstrap.min.css, HTTP/1.1, 200, 0.020980
+127.0.0.1, 2026-03-07 19:00:14, GET, /electus/static/css/calendar.css, HTTP/1.1, 200, 0.017019
+127.0.0.1, 2026-03-07 19:00:14, GET, /electus/static/js/web2py-bootstrap4.js, HTTP/1.1, 200, 0.035496
+127.0.0.1, 2026-03-07 19:00:14, GET, /electus/static/js/modernizr-2.8.3.min.js, HTTP/1.1, 200, 0.070997
+127.0.0.1, 2026-03-07 19:00:14, GET, /electus/static/js/web2py.js, HTTP/1.1, 200, 0.063505
+127.0.0.1, 2026-03-07 19:00:14, GET, /electus/static/js/calendar.js, HTTP/1.1, 200, 0.074741
+127.0.0.1, 2026-03-07 19:00:15, GET, /electus/static/js/bootstrap.bundle.min.js, HTTP/1.1, 200, 0.078720
+127.0.0.1, 2026-03-07 19:00:15, GET, /electus/static/js/jquery.js, HTTP/1.1, 200, 0.120291
+127.0.0.1, 2026-03-07 19:00:15, GET, /electus/static/images/favicon.png, HTTP/1.1, 200, 0.009208
+127.0.0.1, 2026-03-07 19:00:15, GET, /electus/static/images/favicon.ico, HTTP/1.1, 200, 0.009208
+127.0.0.1, 2026-03-07 19:00:27, GET, /electus/default/user/register, HTTP/1.1, 200, 0.065950
