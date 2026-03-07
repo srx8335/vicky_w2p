@@ -45,8 +45,13 @@ def user():
     to decorate functions that need access control
     also notice there is http://..../[app]/appadmin/manage/auth to allow administrator to manage users
     """
-    return dict(form=auth())
+    
 
+    #se o user estiver conseguir logar, redireciona para a página de listar#
+    if auth.is_logged_in():
+        redirect(URL('default', 'dashboard'))
+
+    return dict(form=auth())
 # ---- action to server uploaded static content (required) ---
 @cache.action()
 def download():
@@ -55,7 +60,6 @@ def download():
     http://..../[app]/default/download/[filename]
     """
     return response.download(request, db)
-
 
 
 
