@@ -7,7 +7,8 @@
 
 response.main_menu = [
     (XML('<span class="material-icons">dashboard</span><span> Home</span>'), False, URL('default', 'home'), []),
-    (XML('<span class="material-icons">dashboard</span><span> Finances</span>'), False, URL('default', 'finances'), []),
+    (XML('<span class="material-icons">dashboard</span><span> Home</span>'), False, URL('default', 'Finances'), []),
+    (T('Finances'), False, URL('default', 'finances'), []),
     (T('Pipeline'), False, URL('default', 'pipeline'), []),
     (T('Clients'), False, URL('default', 'clients'), []),
     (T('Tasks'), False, URL('default', 'tasks'), []),
