@@ -10,5 +10,8 @@ background-color: hsl(0, 0%, 20%);
 }
 
 div .content-wrapper{
-    background-image: '../images/app_background.jpeg' !important;
+    background-image: url('../images/app_background.jpeg') !important;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
