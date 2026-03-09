@@ -7,5 +7,5 @@
 
 .info_menu {
     position: absolute;
-    bottom: 0;
+    justify-content: space-between;
 }
