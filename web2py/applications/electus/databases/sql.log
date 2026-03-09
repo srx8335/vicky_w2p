@@ -381,3 +381,11 @@ success!
 success!
 success!
 success!
+timestamp: 2026-03-09T11:23:20.510894
+ALTER TABLE "client" ADD "is_active" CHAR(1);
+success!
+success!
+success!
+success!
+success!
+success!
