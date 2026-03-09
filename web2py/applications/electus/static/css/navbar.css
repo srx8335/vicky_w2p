@@ -9,9 +9,13 @@ background-color: hsl(0, 0%, 20%);
     margin: 3%;
 }
 
-div .content-wrapper{
+.content-wrapper{
     background-image: url('../images/app_background.jpeg') !important;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}
+
+.main-sidebar{
+    border-radius: 12px;
 }
