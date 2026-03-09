@@ -9,6 +9,6 @@ background-color: hsl(0, 0%, 20%);
     margin: 3%;
 }
 
-.content_wrapper{
-    background-image: '../images/app_background.jpeg';
+div .content-wrapper{
+    background-image: '../images/app_background.jpeg' !important;
 }
