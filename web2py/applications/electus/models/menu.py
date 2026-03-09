@@ -5,7 +5,7 @@
 # this is the main application menu add/remove items as required
 # ----------------------------------------------------------------------------------------------------------------------
 
-response.menu += [
+response.main_menu += [
     (T('Home'), False, URL('default', 'home'), []),
     (T('Finances'), False, URL('default', 'finances'), []),
     (T('Pipeline'), False, URL('default', 'pipeline'), []),
@@ -15,13 +15,13 @@ response.menu += [
     (T('Scripts'), False, URL('default', 'scripts'), []),
 ]
 
-response.menu += [
+response.acc_menu += [
     (T('Profile'), False, URL('default', 'profile'), []),
     (T('Settings'), False, URL('default', 'settings'), []),
     (T('Logout'), False, URL('default', 'logout'), []),
 ]
 
-response.menu +=[
+response.info_menu +=[
     (T('About Us'), False, URL('default', 'logout'), []),
 ]
 # ----------------------------------------------------------------------------------------------------------------------
