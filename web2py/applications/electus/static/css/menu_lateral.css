@@ -6,6 +6,7 @@
 }
 
 .info_menu {
-    position: absolute;
-    justify-content: space-between;
+    width: 100%;
+    position:fixed;
+    bottom: 0;
 }
