@@ -21,6 +21,9 @@ response.menu += [
     (T('Logout'), False, URL('default', 'logout'), []),
 ]
 
+response.menu +=[
+    (T('About Us'), False, URL('default', 'logout'), []),
+]
 # ----------------------------------------------------------------------------------------------------------------------
 # provide shortcuts for development. you can remove everything below in production
 # ---------------------------------------------------------------------------------------------------------------------«~~«
