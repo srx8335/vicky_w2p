@@ -4,16 +4,14 @@
 # ----------------------------------------------------------------------------------------------------------------------
 # this is the main application menu add/remove items as required
 # ----------------------------------------------------------------------------------------------------------------------
-
 response.main_menu = [
     (XML('<span class="material-icons">dashboard</span><span> Home</span>'), False, URL('default', 'home'), []),
-    (XML('<span class="material-icons">dashboard</span><span> Home</span>'), False, URL('default', 'Finances'), []),
-    (T('Finances'), False, URL('default', 'finances'), []),
-    (T('Pipeline'), False, URL('default', 'pipeline'), []),
-    (T('Clients'), False, URL('default', 'clients'), []),
-    (T('Tasks'), False, URL('default', 'tasks'), []),
-    (T('Reports'), False, URL('default', 'reports'), []),
-    (T('Scripts'), False, URL('default', 'scripts'), []),
+    (XML('<span class="material-icons">payments</span><span> Finances</span>'), False, URL('default', 'Finances'), []),
+    (XML('<span class="material-icons">timeline</span><span> Pipeline</span>'), False, URL('default', 'pipeline'), []),
+    (XML('<span class="material-icons">groups</span><span> Clients</span>'), False, URL('default', 'clients'), []),
+    (XML('<span class="material-icons">task</span><span> Tasks</span>'), False, URL('default', 'tasks'), []),
+    (XML('<span class="material-icons">bar_chart</span><span> Reports</span>'), False, URL('default', 'reports'), []),
+    (XML('<span class="material-icons">code</span><span> Scripts</span>'), False, URL('default', 'scripts'), []),
 ]
 
 response.acc_menu = [
