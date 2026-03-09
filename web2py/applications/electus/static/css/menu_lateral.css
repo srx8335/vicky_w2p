@@ -1,8 +1,11 @@
 .sidebar-menu a {
    
+    font-weight: 600;
+    font-size: large;
+
     border-radius: 24px;
     position: absolute;
-    margin-left: 15%;
+    margin-left: 8%;
     color: hsl(0, 0%, 85%);
 }
 
