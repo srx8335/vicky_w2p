@@ -4,24 +4,27 @@
 # ----------------------------------------------------------------------------------------------------------------------
 # this is the main application menu add/remove items as required
 # ----------------------------------------------------------------------------------------------------------------------
-response.main_menu = [
-    (XML('<span class="material-symbols-rounded">dashboard</span><span> Home</span>'), False, URL('default', 'home'), []),
-    (XML('<span class="material-symbols-rounded">payments</span><span> Finances</span>'), False, URL('default', 'Finances'), []),
-    (XML('<span class="material-symbols-rounded">timeline</span><span> Pipeline</span>'), False, URL('default', 'pipeline'), []),
-    (XML('<span class="material-symbols-rounded">groups</span><span> Clients</span>'), False, URL('default', 'clients'), []),
-    (XML('<span class="material-symbols-rounded">task</span><span> Tasks</span>'), False, URL('default', 'tasks'), []),
-    (XML('<span class="material-symbols-rounded">bar_chart</span><span> Reports</span>'), False, URL('default', 'reports'), []),
-    (XML('<span class="material-symbols-rounded">code</span><span> Scripts</span>'), False, URL('default', 'scripts'), []),
-]
+response.menu = [
 
-response.acc_menu = [
-    (XML('<span class="material-symbols-rounded">person</span><span> Profile</span>'), False, URL('default', 'profile'), []),
-    (XML('<span class="material-symbols-rounded">settings</span><span> Settings</span>'), False, URL('default', 'settings'), []),
-    (XML('<span class="material-symbols-rounded">logout</span><span> Logout</span>'), False, URL('default', 'logout'), []),
-]
+    (XML('<li class="nav-header">MAIN</li>'), False, None, []),
 
-response.info_menu = [
-    (XML('<span class="material-symbols-rounded">help</span><span> About Us</span>'), False, URL('default', 'about'), []),
+    (XML('<span class="material-icons">home</span><span> Home</span>'), False, URL('default','home'), []),
+    (XML('<span class="material-icons">payments</span><span> Finances</span>'), False, URL('default','finances'), []),
+    (XML('<span class="material-icons">timeline</span><span> Pipeline</span>'), False, URL('default','pipeline'), []),
+    (XML('<span class="material-icons">groups</span><span> Clients</span>'), False, URL('default','clients'), []),
+    (XML('<span class="material-icons">task</span><span> Tasks</span>'), False, URL('default','tasks'), []),
+    (XML('<span class="material-icons">bar_chart</span><span> Reports</span>'), False, URL('default','reports'), []),
+    (XML('<span class="material-icons">code</span><span> Scripts</span>'), False, URL('default','scripts'), []),
+
+    (XML('<li class="nav-header">ACCOUNT</li>'), False, None, []),
+
+    (XML('<span class="material-icons">person</span><span> Profile</span>'), False, URL('default','profile'), []),
+    (XML('<span class="material-icons">settings</span><span> Settings</span>'), False, URL('default','settings'), []),
+    (XML('<span class="material-icons">logout</span><span> Logout</span>'), False, URL('default','logout'), []),
+
+    (XML('<li class="nav-header">INFO</li>'), False, None, []),
+
+    (XML('<span class="material-icons">info</span><span> About Us</span>'), False, URL('default','about'), []),
 ]
 # ----------------------------------------------------------------------------------------------------------------------
 # provide shortcuts for development. you can remove everything below in production
