@@ -131,8 +131,19 @@ desired effect
       <!-- /.search form -->
       <br>
       <!-- Sidebar Menu -->
-      {{if response.menu:}}
-      {{=MENU(response.menu, _class='sidebar-menu')}} <!-- TODO: Customize MENU(...) to include icons -->
+      {{if response.main_menu:}}
+      <div class="main_menu">
+      {{=MENU(response.main_menu, _class='sidebar-menu')}} <!-- TODO: Customize MENU(...) to include icons -->
+      </div>
+
+      <div class="acc_menu">
+      {{=MENU(response.acc_menu, _class='sidebar-menu')}} <!-- TODO: Customize MENU(...) to include icons -->
+      </div>
+      
+      <div class="info_menu">
+      {{=MENU(response.info_menu, _class='sidebar-menu')}} <!-- TODO: Customize MENU(...) to include icons -->
+      </div>
+      
       {{pass}}
       <!-- /.sidebar-menu -->
     </section>

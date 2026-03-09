@@ -30177,3 +30177,13 @@ P/1.1, 200, 0.002061
 127.0.0.1, 2026-03-09 13:58:53, GET, /electus/static/images/app_background.jpeg, HTTP/1.1, 200, 0.001055
 127.0.0.1, 2026-03-09 13:58:53, GET, /electus/static/js/web2py-bootstrap3.js, HTTP/1.1, 404, 0.000000
 127.0.0.1, 2026-03-09 14:39:22, GET, /electus/default/home, HTTP/1.1, 500, 0.385560
+127.0.0.1, 2026-03-09 14:45:34, GET, /electus/default/home, HTTP/1.1, 500, 0.079159
+127.0.0.1, 2026-03-09 14:45:34, GET, /favicon.ico, HTTP/1.1, 400, 0.000000
+127.0.0.1, 2026-03-09 14:45:36, GET, /electus/default/home, HTTP/1.1, 500, 0.056199
+127.0.0.1, 2026-03-09 14:45:36, GET, /favicon.ico, HTTP/1.1, 400, 0.000000
+127.0.0.1, 2026-03-09 14:45:38, GET, /electus/default/home, HTTP/1.1, 500, 0.050246
+127.0.0.1, 2026-03-09 14:45:39, GET, /admin/default/ticket/electus/127.0.0.1.2026-03-09.14-45-38.25e113f5-f6fe-4359-b3aa-7e20e864cf08, HTTP/1.1, 303, 0.021909
+127.0.0.1, 2026-03-09 14:45:39, GET, /admin/default/index, HTTP/1.1, 200, 0.031193
+127.0.0.1, 2026-03-09 14:45:40, POST, /admin/default/index, HTTP/1.1, 303, 0.015826
+127.0.0.1, 2026-03-09 14:45:40, GET, /admin/default/ticket/electus/127.0.0.1.2026-03-09.14-45-38.25e113f5-f6fe-4359-b3aa-7e20e864cf08, HTTP/1.1, 200, 0.064804
+127.0.0.1, 2026-03-09 14:45:41, GET, /admin/static/_3.0.11/images/help.png, HTTP/1.1, 200, 0.004267
