@@ -2,7 +2,8 @@
 
 body{
     font-family: "Poppins";
-background-color: hsl(0, 0%, 20%);
+
+    background-color: hsl(0, 0%, 20%);
 }
 
 .page_title {
@@ -22,3 +23,4 @@ background-color: hsl(0, 0%, 20%);
 .main-sidebar{
     border-radius: 12px;
 }
+

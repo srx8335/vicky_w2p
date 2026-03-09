@@ -6,7 +6,7 @@
 # ----------------------------------------------------------------------------------------------------------------------
 
 response.main_menu = [
-    (T('Home'), False, URL('default', 'home'), []),
+    (XML('<span class="material-icons">dashboard</span><span> Home</span>'), False, URL('default', 'home'), []),
     (T('Finances'), False, URL('default', 'finances'), []),
     (T('Pipeline'), False, URL('default', 'pipeline'), []),
     (T('Clients'), False, URL('default', 'clients'), []),
