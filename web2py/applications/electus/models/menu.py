@@ -15,13 +15,13 @@ response.main_menu = [
 ]
 
 response.acc_menu = [
-    (T('Profile'), False, URL('default', 'profile'), []),
-    (T('Settings'), False, URL('default', 'settings'), []),
-    (T('Logout'), False, URL('default', 'logout'), []),
+    (XML('<span class="material-icons">person</span><span> Profile</span>'), False, URL('default', 'profile'), []),
+    (XML('<span class="material-icons">settings</span><span> Settings</span>'), False, URL('default', 'settings'), []),
+    (XML('<span class="material-icons">logout</span><span> Logout</span>'), False, URL('default', 'logout'), []),
 ]
 
-response.info_menu =[
-    (T('About Us'), False, URL('default', 'logout'), []),
+response.info_menu = [
+    (XML('<span class="material-icons">help</span><span> About Us</span>'), False, URL('default', 'about'), []),
 ]
 # ----------------------------------------------------------------------------------------------------------------------
 # provide shortcuts for development. you can remove everything below in production
