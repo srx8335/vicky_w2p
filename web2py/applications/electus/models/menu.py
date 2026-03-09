@@ -6,7 +6,7 @@
 # ----------------------------------------------------------------------------------------------------------------------
 response.menu = [
 
-    (XML('<li class="nav-header">MAIN</li>'), False, None, []),
+    (XML('<li class="nav-header"></li>'), False, None, []),
 
     (XML('<span class="material-icons">home</span><span> Home</span>'), False, URL('default','home'), []),
     (XML('<span class="material-icons">payments</span><span> Finances</span>'), False, URL('default','finances'), []),
@@ -16,13 +16,13 @@ response.menu = [
     (XML('<span class="material-icons">bar_chart</span><span> Reports</span>'), False, URL('default','reports'), []),
     (XML('<span class="material-icons">code</span><span> Scripts</span>'), False, URL('default','scripts'), []),
 
-    (XML('<li class="nav-header">ACCOUNT</li>'), False, None, []),
+    (XML('<li class="nav-header">  </li>'), False, None, []),
 
     (XML('<span class="material-icons">person</span><span> Profile</span>'), False, URL('default','profile'), []),
     (XML('<span class="material-icons">settings</span><span> Settings</span>'), False, URL('default','settings'), []),
     (XML('<span class="material-icons">logout</span><span> Logout</span>'), False, URL('default','logout'), []),
 
-    (XML('<li class="nav-header">INFO</li>'), False, None, []),
+    (XML('<li class="nav-header">  </li>'), False, None, []),
 
     (XML('<span class="material-icons">info</span><span> About Us</span>'), False, URL('default','about'), []),
 ]
