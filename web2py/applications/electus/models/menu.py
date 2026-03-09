@@ -22,7 +22,7 @@ response.menu = [
     (XML('<span class="material-icons">settings</span><span> Settings</span>'), False, URL('default','settings'), []),
     (XML('<span class="material-icons">logout</span><span> Logout</span>'), False, URL('default','logout'), []),
 
-    (XML('<li class="nav-header">  </li>'), False, None, []),
+    (XML('<li class="nav-header sidebar-bottom">  </li>'), False, None, []),
 
     (XML('<span class="material-icons">info</span><span> About Us</span>'), False, URL('default','about'), []),
 ]

@@ -9,6 +9,15 @@
     color: hsl(0, 0%, 85%);
 }
 
+.sidebar{
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-bottom {
+    margin-top: auto;
+}
+
 .info_menu {
     padding-left: 1%;
     padding-bottom: 1.6%;
@@ -22,5 +31,4 @@
     vertical-align: middle;
     margin-right:8px;
     font-size:20px;
-    FILL: 
 }
