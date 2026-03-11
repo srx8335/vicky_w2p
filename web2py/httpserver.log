@@ -31973,3 +31973,17 @@ P/1.1, 200, 0.002061
 127.0.0.1, 2026-03-11 14:38:05, GET, /electus/static/images/favicon.png, HTTP/1.1, 200, 0.007320
 127.0.0.1, 2026-03-11 14:38:05, GET, /electus/static/images/favicon.ico, HTTP/1.1, 200, 0.000000
 127.0.0.1, 2026-03-11 14:40:40, GET, /electus/static/css/base_layout.css, HTTP/1.1, 200, 0.002028
+127.0.0.1, 2026-03-11 14:58:19, GET, /electus/default/home, HTTP/1.1, 200, 0.056351
+127.0.0.1, 2026-03-11 14:58:20, GET, /electus/static/js/web2py-bootstrap3.js, HTTP/1.1, 404, 0.000000
+127.0.0.1, 2026-03-11 14:58:20, GET, /electus/static/css/base_layout.css, HTTP/1.1, 304, 0.002011
+127.0.0.1, 2026-03-11 14:58:20, GET, /electus/static/css/web2py-bootstrap3.css, HTTP/1.1, 404, 0.000000
+127.0.0.1, 2026-03-11 14:58:20, GET, /electus/static/images/logo_electus.svg, HTTP/1.1, 404, 0.002010
+127.0.0.1, 2026-03-11 14:58:20, GET, /electus/static/css/web2py-bootstrap3.css, HTTP/1.1, 404, 0.000000
+127.0.0.1, 2026-03-11 14:58:20, GET, /electus/static/images/logo_electus.svg, HTTP/1.1, 404, 0.000000
+127.0.0.1, 2026-03-11 14:58:20, GET, /electus/static/js/web2py-bootstrap3.js, HTTP/1.1, 404, 0.004718
+127.0.0.1, 2026-03-11 14:58:27, GET, /electus/default/index, HTTP/1.1, 303, 0.037144
+127.0.0.1, 2026-03-11 14:58:27, GET, /electus/default/home, HTTP/1.1, 200, 0.044151
+127.0.0.1, 2026-03-11 14:58:27, GET, /electus/static/css/web2py-bootstrap3.css, HTTP/1.1, 404, 0.002016
+127.0.0.1, 2026-03-11 14:58:27, GET, /electus/static/js/web2py-bootstrap3.js, HTTP/1.1, 404, 0.003170
+127.0.0.1, 2026-03-11 14:58:27, GET, /electus/static/images/logo_electus.svg, HTTP/1.1, 404, 0.000000
+127.0.0.1, 2026-03-11 14:58:27, GET, /electus/static/js/web2py-bootstrap3.js, HTTP/1.1, 404, 0.000000
