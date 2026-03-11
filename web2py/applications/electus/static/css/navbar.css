@@ -6,12 +6,6 @@ body{
     background-color: hsl(0, 0%, 20%);
 }
 
-.page_title {
-    font-size: 30px;
-    font-weight: bold;
-    color: hsl(0, 0%, 88%);
-    margin: 3%;
-}
 
 .content-wrapper{
     background-image: url('../images/app_background.jpeg') !important;
@@ -24,3 +18,4 @@ body{
     border-radius: 12px;
 }
 
+ 
