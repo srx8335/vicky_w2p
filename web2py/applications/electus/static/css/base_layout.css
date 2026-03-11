@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Jolly+Lodger&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* PAGE BODY  */
+.content-wrapper{
+    background-image: url('../images/app_background.jpeg') !important;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+
+body{
+    font-family: "Poppins" !important;
+    background-color: hsl(0, 0%, 20%);
+}
+
+
+/* SIDEBAR MENU */
+
+.menu{margin-top: 30%;}
+
+
+.logo-lg{color: rgb(65, 4, 91);}
+
+.main-sidebar{
+    border-radius: 12px;
+}
+
+
+.sidebar-menu a {
+   
+    font-weight: 500;
+    font-size: 18px;
+
+    border-radius: 24px;
+    position: absolute;
+    margin-left: 8%;
+    color: hsl(0, 0%, 85%);
+}
+
+.sidebar{
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-bottom {
+    margin-top: auto;
+}
+
+.info_menu {
+    padding-left: 1%;
+    padding-bottom: 1.6%;
+    width: 13%;
+    position:fixed;
+    bottom: 0;
+}
+
+
+.material-icons{
+    vertical-align: middle;
+    margin-right:8px;
+    font-size:20px;
+}
+
+
+/* TOP NAVBAR */
+
+.page_title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+}
+
+
+
+
+
+
+ 

@@ -168,6 +168,7 @@ db.define_table("client",
                  Field("email", "string"),
                  Field("ltv", "double", default=0.0),
                  Field("lead_src", "string", requires=IS_IN_SET(["Referral", "Instagram", "Cold Outreach", "Upwork", "Other"])),
+                 Field("is_active", "boolean", default=True),
                 )
 
 #torna todos os campos obrigatórios menos as exceções

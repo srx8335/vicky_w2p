@@ -68,3 +68,7 @@ def download():
 def home():
     test='test'
     return dict(test=test)
+
+def clients():
+    test='clients'
+    return dict(test=test)
