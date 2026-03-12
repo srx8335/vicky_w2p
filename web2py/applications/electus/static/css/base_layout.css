@@ -92,21 +92,17 @@ body{
 }
 
 .top-items{
-    margin-inline-end: 2%;
+    display: flex;
+    align-items: center;      /* alinha verticalmente */
+    justify-content: space-between; /* separa título e pesquisa */
+
     margin-top: 3%;
-    padding-inline-start: 2%;
 }
 
 /* search */
-.input-group{
-    max-width: 20%;
-    margin-left: 68%;
-}
-
-
- .input-group {
+ /* .input-group {
     position: relative;
-}
+} */
 
 .input-group input {
     width: 100%;
