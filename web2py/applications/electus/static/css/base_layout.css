@@ -27,7 +27,6 @@ body{
     border-radius: 12px;
 }
 .web2py-menu-active{
-    background: #8726BB;
     background: linear-gradient(90deg, rgba(135, 38, 187, 1) 0%, rgba(42, 86, 146, 1) 88%);
 
     border-radius: 24px;
