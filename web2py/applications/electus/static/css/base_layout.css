@@ -97,13 +97,11 @@ body{
     justify-content: space-between; /* separa título e pesquisa */
 
     margin-top: 3%;
+    margin-left: 2%;
+    margin-right: 2%;
 }
 
 /* search */
- /* .input-group {
-    position: relative;
-} */
-
 .input-group input {
     width: 100%;
     padding: 8px 12px 8px 40px;
