@@ -8,10 +8,10 @@ response.menu = [
 
     (XML('<li class="nav-header"></li>'), False, None, []),
 
-    (XML('<span class="material-icons">home</span><span> Home</span>'), page=='home', URL('default','home'), []),
+    (XML('<span class="material-icons">home</span><span> Home</span>'), request.function=='home', URL('default','home'), []),
     (XML('<span class="material-icons">payments</span><span> Finances</span>'), False, URL('default','finances'), []),
     (XML('<span class="material-icons">timeline</span><span> Pipeline</span>'), False, URL('default','pipeline'), []),
-    (XML('<span class="material-icons">groups</span><span> Clients</span>'), page=='clients', URL('default','clients'), []),
+    (XML('<span class="material-icons">groups</span><span> Clients</span>'), request.function=='clients', URL('default','clients'), []),
     (XML('<span class="material-icons">task</span><span> Tasks</span>'), False, URL('default','tasks'), []),
     (XML('<span class="material-icons">bar_chart</span><span> Reports</span>'), False, URL('default','reports'), []),
     (XML('<span class="material-icons">code</span><span> Scripts</span>'), False, URL('default','scripts'), []),
