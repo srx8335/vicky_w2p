@@ -33,7 +33,7 @@ body{
 
     max-width: 95%;
 
-    transition: background 3s ease-in;
+    animation: fadeInMenu 0.35s ease;
 
 }
 
@@ -97,3 +97,41 @@ body{
 
 
  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ANIMATIONS AND EFFECTS */
+
+/* sidebar menu backgroud fade in */
+@keyframes fadeInMenu {
+    from {
+        opacity: 0;
+        transform: translateX(-6px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
