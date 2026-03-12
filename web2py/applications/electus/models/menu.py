@@ -6,8 +6,6 @@
 # ----------------------------------------------------------------------------------------------------------------------
 response.menu = [
 
-    (XML('<li class="nav-header"></li>'), False, None, []),
-
     (XML('<span class="material-icons">home</span><span> Home</span>'), False, URL('default','home'), []),
     (XML('<span class="material-icons">payments</span><span> Finances</span>'), False, URL('default','finances'), []),
     (XML('<span class="material-icons">timeline</span><span> Pipeline</span>'), False, URL('default','pipeline'), []),
