@@ -68,11 +68,13 @@ def download():
 def home():
     test='home'
     response.page = 'home'
+    response.title = 'Dashboard Overview'
     return dict(test=test)
 
 def finances():
     test='finances'
     response.page = 'finances'
+    response.title = 'Finances Overview'
     return dict(test=test)
 
 def pipeline():
