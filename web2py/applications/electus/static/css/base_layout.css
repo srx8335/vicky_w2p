@@ -91,7 +91,9 @@ body{
     margin: 0;
 }
 
-
+.top_items{
+    max-inline-size: 80%;
+}
 
 
 
