@@ -104,7 +104,12 @@ desired effect
 
 
       <div class="top-items">  
-        <!-- search form (Optional) -->
+
+        <div class="page_title">
+          <h3 class="dashboard_title">{{=response.title}}</h3>
+        </div>
+
+        <!-- search form -->
         <form action="#" method="get" class="sidebar-form">
           <div class="input-group">
               <input type="text" placeholder="Search here">
@@ -113,14 +118,6 @@ desired effect
         </form>
         <!-- /.search form -->
       </div>
-
-        <!-- Custom Navbar -->
-        <div class="page_title">
-          <h3 class="dashboard_title">{{=response.title}}</h3>
-        </div>
-
-          </li> 
-        </ul>
       </div>
     </nav>
   </header>
