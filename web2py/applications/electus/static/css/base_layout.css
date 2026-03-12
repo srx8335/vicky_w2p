@@ -131,13 +131,13 @@ body{
 
 .input-group input{
     width:100%;
-    padding:10px 15px 10px 40px;
+    padding:10px 15px 10px 55px;
     border-radius:25px;
     border:none;
     
     background-color: #1f1f1f;
     color: #8a8a8a;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 .search-icon{
