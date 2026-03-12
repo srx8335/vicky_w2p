@@ -66,9 +66,11 @@ def download():
 
 
 def home():
-    test='test'
+    test='home'
+    response.page = 'home'
     return dict(test=test)
 
 def clients():
     test='clients'
+    response.page = 'clients'
     return dict(test=test)
