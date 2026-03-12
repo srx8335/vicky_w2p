@@ -123,6 +123,7 @@ body{
 
 .sidebar-form{
     width:300px;
+    color: #8a8a8a;
 }
 
 .input-group{
@@ -137,12 +138,13 @@ body{
 }
 
 .search-icon{
+    background-color: #1f1f1f;
     position:absolute;
     left:12px;
     top:50%;
     transform:translateY(-50%);
     font-size:20px;
-    color:#888;
+    color:#ffffff;
 }
 
 
