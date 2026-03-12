@@ -12,7 +12,7 @@ response.menu = [
     (XML('<span class="material-icons">payments</span><span> Finances</span>'), request.function=='finances', URL('default','finances'), []),
     (XML('<span class="material-icons">timeline</span><span> Pipeline</span>'), request.function=='pipeline', URL('default','pipeline'), []),
     (XML('<span class="material-icons">groups</span><span> Clients</span>'), request.function=='clients', URL('default','clients'), []),
-    (XML('<span class="material-icons">task</span><span> Tasks</span>'), request.function=='task', URL('default','tasks'), []),
+    (XML('<span class="material-icons">task</span><span> Tasks</span>'), request.function=='tasks', URL('default','tasks'), []),
     (XML('<span class="material-icons">bar_chart</span><span> Reports</span>'), request.function=='reports', URL('default','reports'), []),
     (XML('<span class="material-icons">code</span><span> Scripts</span>'), request.function=='scripts', URL('default','scripts'), []),
 
