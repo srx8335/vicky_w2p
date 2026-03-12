@@ -32,6 +32,9 @@ body{
     border-radius: 24px;
 
     max-width: 95%;
+
+    transition: background 3s ease-in;
+
 }
 
 .sidebar{
