@@ -92,7 +92,8 @@ body{
 }
 
 .top_items{
-    max-inline-size: 80%;
+    flex-wrap: wrap;
+    padding-inline-start: 15%;
 }
 
 
