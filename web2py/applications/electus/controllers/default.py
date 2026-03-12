@@ -70,7 +70,6 @@ def home():
     response.page = 'home'
     return dict(test=test)
 
-
 def finances():
     test='finances'
     response.page = 'finances'
@@ -111,15 +110,17 @@ def settings():
     response.page = 'settings'
     return dict(test=test)
 
-def home():
-    test='home'
-    response.page = 'home'
+def logout():
+    test='logout'
+    response.page = 'logout'
     return dict(test=test)
 
 
 
+
+
 # 3rd section of sidebar
-def clients():
-    test='clients'
-    response.page = 'clients'
+def about():
+    test='about'
+    response.page = 'about'
     return dict(test=test)
