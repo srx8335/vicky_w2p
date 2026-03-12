@@ -70,6 +70,55 @@ def home():
     response.page = 'home'
     return dict(test=test)
 
+
+def finances():
+    test='finances'
+    response.page = 'finances'
+    return dict(test=test)
+
+def pipeline():
+    test='pipeline'
+    response.page = 'pipeline'
+    return dict(test=test)
+
+def clients():
+    test='clients'
+    response.page = 'clients'
+    return dict(test=test)
+
+def reports():
+    test='reports'
+    response.page = 'reports'
+    return dict(test=test)
+
+def scripts():
+    test='scripts'
+    response.page = 'scripts'
+    return dict(test=test)
+
+
+
+
+
+# secound section of sidebar
+def profile():
+    test='profile'
+    response.page = 'profile'
+    return dict(test=test)
+
+def settings():
+    test='settings'
+    response.page = 'settings'
+    return dict(test=test)
+
+def home():
+    test='home'
+    response.page = 'home'
+    return dict(test=test)
+
+
+
+# 3rd section of sidebar
 def clients():
     test='clients'
     response.page = 'clients'
