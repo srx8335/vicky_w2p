@@ -15,6 +15,10 @@ body{
     background-color: hsl(0, 0%, 20%);
 }
 
+.content{
+    border: aquamarine 3px solid;
+    margin: 4%;
+}
 
 /* SIDEBAR MENU */
 
