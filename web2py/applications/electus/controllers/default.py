@@ -80,26 +80,31 @@ def finances():
 def pipeline():
     test='pipeline'
     response.page = 'pipeline'
+    response.title = 'Pipeline Overview'
     return dict(test=test)
 
 def clients():
     test='clients'
     response.page = 'clients'
+    response.title = 'Clients Overview'
     return dict(test=test)
 
 def tasks():
     test='tasks'
     response.page = 'tasks'
+    response.title = 'Tasks Overview'
     return dict(test=test)
 
 def reports():
     test='reports'
     response.page = 'reports'
+    response.title = 'Reports Overview'
     return dict(test=test)
 
 def scripts():
     test='scripts'
     response.page = 'scripts'
+    response.title = 'Scripts Overview'
     return dict(test=test)
 
 
@@ -110,11 +115,13 @@ def scripts():
 def profile():
     test='profile'
     response.page = 'profile'
+    response.title = 'Profile'
     return dict(test=test)
 
 def settings():
     test='settings'
     response.page = 'settings'
+    response.title = 'Settings'
     return dict(test=test)
 
 def logout():
@@ -130,4 +137,5 @@ def logout():
 def about():
     test='about'
     response.page = 'about'
+    response.title = 'About Us'
     return dict(test=test)
