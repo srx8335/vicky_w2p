@@ -107,9 +107,10 @@ body{
 }
 
 .dashboard_title{
-    font-size:26px;
-    font-weight:700;
+    font-size:24px;
+    font-weight:bold;
     margin:0;
+    color: #faebd7;
 }
 
 .dashboard_subtitle{
