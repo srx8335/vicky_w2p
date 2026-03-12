@@ -91,12 +91,17 @@ body{
     margin: 0;
 }
 
-.top_items{
-    flex-wrap: wrap;
-    padding-inline-start: 15%;
+.top-items{
+    margin-inline-end: 2%;
+    margin-top: 3%;
+    padding-inline-start: 2%;
 }
 
-
+/* search */
+.input-group{
+    max-width: 20%;
+    margin-left: 68%;
+}
 
 
  
