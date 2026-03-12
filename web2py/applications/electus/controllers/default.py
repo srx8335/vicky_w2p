@@ -85,6 +85,11 @@ def clients():
     response.page = 'clients'
     return dict(test=test)
 
+def tasks():
+    test='tasks'
+    response.page = 'tasks'
+    return dict(test=test)
+
 def reports():
     test='reports'
     response.page = 'reports'
