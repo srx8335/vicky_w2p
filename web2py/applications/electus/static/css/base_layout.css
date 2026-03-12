@@ -17,7 +17,8 @@ body{
 
 .content{
     border: aquamarine 3px solid;
-    margin: 4%;
+    margin-top: 6%;
+    margin: 6%; 
 }
 
 /* SIDEBAR MENU */
