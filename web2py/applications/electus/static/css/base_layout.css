@@ -34,6 +34,11 @@ body{
     max-width: 95%;
 }
 
+.sidebar-menu li.current > a {
+    margin-left: 8px;
+    border-radius: 6px;
+}
+
 .sidebar-menu a {
    
     font-weight: 500;
