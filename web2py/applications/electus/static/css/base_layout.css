@@ -88,6 +88,11 @@ body{
 }
 
 
+
+
+
+
+
 /* TOP NAVBAR */
 
 .top-items{
@@ -107,14 +112,14 @@ body{
 }
 
 .dashboard_title{
-    font-size:24px;
+    font-size:36px;
     font-weight:bold;
     margin:0;
     color: #faebd7f1;
 }
 
 .dashboard_subtitle{
-    font-size:14px;
+    font-size:20px;
     color:#8a8a8a;
     margin:0;
 }
