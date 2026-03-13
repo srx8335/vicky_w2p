@@ -41,6 +41,10 @@ body{
 
     animation: fadeInMenu 0.75s ease;
 
+}
+
+.web2py-menu-active a{
+
     color: #ffffff;
 
 }
