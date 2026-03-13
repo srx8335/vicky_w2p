@@ -236,7 +236,7 @@ body{
 }
 
 .dropdown-menu{
-    position: relative;
+    position:absolute;
     top:55px;
 
     width:200px;
