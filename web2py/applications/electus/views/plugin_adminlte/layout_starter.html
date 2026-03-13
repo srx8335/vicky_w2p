@@ -118,11 +118,26 @@ desired effect
           </div>
         </form>
 
-        <div class="right-actions">
-          <div class="user-avatar">
-              <img src="{{=URL('static', 'images/future_wife.jpeg')}}">
-          </div>
+        <div class="right-actions" >
+          <div class="avatar-dropdown">
 
+              <div class="user-avatar" onclick="toggleDropdown()">
+                  <img src="{{=URL('static','images/future_wife.jpeg')}}">
+              </div>
+
+              <div class="dropdown-menu" id="avatarMenu">
+                  <div class="dropdown-header">
+                      <strong>Ricardo Rodrigues</strong>
+                      <span>ricardo@email.com</span>
+                  </div>
+
+                  <a href="{{=URL('default','profile')}}">Profile</a>
+                  <a href="{{=URL('default','settings')}}">Settings</a>
+                  <a href="{{=URL('default','logout')}}">Logout</a>
+              </div>
+
+          </div>
+          
           <div class="action-btn">
               <span class="material-icons">inbox</span>
           </div>
