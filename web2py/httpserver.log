@@ -34593,7 +34593,6 @@ P/1.1, 200, 0.002061
 127.0.0.1, 2026-03-12 23:32:16, GET, /electus/static/js/web2py-bootstrap3.js, HTTP/1.1, 404, 0.000000
 127.0.0.1, 2026-03-12 23:32:16, GET, /electus/static/css/web2py-bootstrap3.css, HTTP/1.1, 404, 0.000504
 127.0.0.1, 2026-03-12 23:41:45, GET, /electus/static/css/web2py-bootstrap3.css, HTTP/1.1, 404, 0.000000
->>>>>>> 8759df1683391ec819a296d4fd6f9b8071f90ee5
 127.0.0.1, 2026-03-13 12:34:15, GET, /electus/default/home, HTTP/1.1, 200, 0.079988
 127.0.0.1, 2026-03-13 12:34:15, GET, /electus/static/js/web2py-bootstrap3.js, HTTP/1.1, 404, 0.000000
 127.0.0.1, 2026-03-13 12:34:15, GET, /electus/static/images/future_wife.jpeg, HTTP/1.1, 200, 0.012126
@@ -34676,3 +34675,14 @@ P/1.1, 200, 0.002061
 127.0.0.1, 2026-03-13 14:10:19, GET, /electus/default/home, HTTP/1.1, 500, 0.080288
 127.0.0.1, 2026-03-13 14:10:21, GET, /admin/default/ticket/electus/127.0.0.1.2026-03-13.14-10-19.43a94b48-7ed5-41a7-aaa3-7f9602f02ab1, HTTP/1.1, 500, 0.015583
 127.0.0.1, 2026-03-13 14:11:47, GET, /admin/default/ticket/electus/127.0.0.1.2026-03-13.14-10-19.43a94b48-7ed5-41a7-aaa3-7f9602f02ab1, HTTP/1.1, 500, 0.023955
+127.0.0.1, 2026-03-13 14:20:46, GET, /, HTTP/1.1, 303, 0.005185
+127.0.0.1, 2026-03-13 14:20:46, GET, /welcome/default/index, HTTP/1.1, 200, 0.054740
+127.0.0.1, 2026-03-13 14:20:47, GET, /welcome/static/images/background.jpg, HTTP/1.1, 404, 0.000000
+127.0.0.1, 2026-03-13 14:20:50, GET, /admin/default/index, HTTP/1.1, 200, 0.024660
+127.0.0.1, 2026-03-13 14:20:52, POST, /admin/default/index, HTTP/1.1, 303, 0.012840
+127.0.0.1, 2026-03-13 14:20:52, GET, /admin/default/site, HTTP/1.1, 200, 0.024359
+127.0.0.1, 2026-03-13 14:20:53, POST, /admin/default/check_version, HTTP/1.1, 200, 1.373350
+127.0.0.1, 2026-03-13 14:20:54, GET, /electus/default/index, HTTP/1.1, 303, 0.047906
+127.0.0.1, 2026-03-13 14:20:54, GET, /electus/default/home, HTTP/1.1, 500, 0.051950
+127.0.0.1, 2026-03-13 14:20:56, GET, /admin/default/ticket/electus/127.0.0.1.2026-03-13.14-20-54.2c0586a8-7d43-4842-8b50-50931003d59c, HTTP/1.1, 200, 0.051974
+127.0.0.1, 2026-03-13 14:20:56, GET, /admin/static/_3.0.11/images/help.png, HTTP/1.1, 200, 0.002011
