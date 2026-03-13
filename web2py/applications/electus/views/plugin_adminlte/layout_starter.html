@@ -127,7 +127,11 @@ desired effect
 
               <div class="dropdown-menu" id="avatarMenu">
                   <div class="dropdown-header">
-                      <strong>{{=auth.user.first_name}} {{=auth.user.last_name}}</strong>
+                      {{ if auth.user: }}
+                          <strong>{{=auth.user.first_name}} {{=auth.user.last_name}}</strong>
+                      {{ else: }}
+                          <strong>Visitante</strong>
+                      {{ pass }}
                       <span>ricardo@email.com</span>
                   </div>
 
