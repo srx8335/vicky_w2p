@@ -6,7 +6,7 @@
 
 # ---- example index page ----
 def index():
-    redirect(URL('default', 'home'))
+    redirect(URL('default', 'user', args='login'))
 
 # ---- API (example) -----
 @auth.requires_login()
@@ -64,7 +64,7 @@ def download():
 
 
 
-
+@auth.requires_login()
 def home():
     test='home'
     response.page = 'home'
