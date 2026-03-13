@@ -104,23 +104,31 @@ desired effect
 
 
       <div class="top-items">  
-        <!-- search form (Optional) -->
+
+        <div class="title-container">
+          <h3 class="dashboard_title">{{=response.title}}</h3>
+          <p class="dashboard_subtitle">{{=response.subtitle}}</h3>
+        </div>
+
+        <!-- search form -->
         <form action="#" method="get" class="sidebar-form">
           <div class="input-group">
               <input type="text" placeholder="Search here">
               <span class="material-icons search-icon">search</span>
           </div>
         </form>
+
+        <div class="right-actions">
+          <div class="user-avatar">
+              <img src="{{=URL('static', 'images/future_wife.jpeg')}}">
+          </div>
+
+          <div class="action-btn">
+              <span class="material-icons">inbox</span>
+          </div>
+        </div>
         <!-- /.search form -->
       </div>
-
-        <!-- Custom Navbar -->
-        <div class="page_title">
-          <h3 class="dashboard_title">{{=response.title}}</h3>
-        </div>
-
-          </li> 
-        </ul>
       </div>
     </nav>
   </header>

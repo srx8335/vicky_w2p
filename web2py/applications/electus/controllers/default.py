@@ -69,6 +69,7 @@ def home():
     test='home'
     response.page = 'home'
     response.title = 'Dashboard Overview'
+    response.subtitle = 'Track your sales, revenue, and growth metrics in real time.'
     return dict(test=test)
 
 def finances():
