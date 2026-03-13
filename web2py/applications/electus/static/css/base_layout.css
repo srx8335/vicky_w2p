@@ -35,13 +35,17 @@ body{
 .web2py-menu-active{
     background: linear-gradient(90deg, rgba(135, 38, 187, 1) 0%, rgba(42, 86, 146, 1) 88%);
 
-    color: #eee;
-
     border-radius: 24px;
 
     max-width: 95%;
 
     animation: fadeInMenu 0.75s ease;
+
+}
+
+.web2py-menu-active > a {
+
+    color: #ffffff !important;
 
 }
 
