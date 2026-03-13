@@ -297,5 +297,26 @@ desired effect
 <!-- Optionally, you can add Slimscroll and FastClick plugins.
      Both of these plugins are recommended to enhance the
      user experience. -->
+
+<!--!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! DROPDOWN MENU SCRIPT !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<script>
+function toggleDropdown() {
+    const menu = document.getElementById("avatarMenu");
+    menu.style.display = menu.style.display === "flex" ? "none" : "flex";
+}
+
+/* fechar ao clicar fora */
+
+document.addEventListener("click", function(event) {
+    const dropdown = document.querySelector(".avatar-dropdown");
+    const menu = document.getElementById("avatarMenu");
+
+    if (!dropdown.contains(event.target)) {
+        menu.style.display = "none";
+    }
+});
+</script>
+
+
 </body>
 </html>
