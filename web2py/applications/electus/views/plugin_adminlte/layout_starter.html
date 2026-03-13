@@ -127,8 +127,8 @@ desired effect
 
               <div class="dropdown-menu" id="avatarMenu">
                   <div class="dropdown-header">
-                      <strong>Ricardo Rodrigues</strong>
-                      <span>ricardo@email.com</span>
+                      <strong>{{=auth.user.first_name}} {{=auth.user.last_name}}</strong>
+                      <span>{{=auth.user.email}}</span>
                   </div>
 
                   <a href="{{=URL('default','profile')}}">Profile</a>
