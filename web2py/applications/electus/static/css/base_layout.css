@@ -146,7 +146,7 @@ body{
     position:absolute;
     left: 16px;
     top:50%;
-    transform:translateY(-38%);
+    transform:translateY(-50%);
     scale: 1.2;
 }
 
@@ -154,7 +154,7 @@ body{
 .right-actions{
     display:flex;
     align-items:center;
-    gap: 30%;
+    gap: 30px;
 }
 
 /* círculo geral */
