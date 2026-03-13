@@ -136,11 +136,11 @@ body{
 /* search bar */
 
 .sidebar-form{
-    width:300px;
+    min-width:300px;
 }
 
 .input-group{
-    position:relative;
+    position:realtive;
 }
 
 .input-group input{
