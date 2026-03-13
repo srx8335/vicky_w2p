@@ -119,6 +119,20 @@ body{
     margin:0;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* search bar */
 
 .sidebar-form{
@@ -151,6 +165,17 @@ body{
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
 .right-actions{
     display:flex;
     align-items:center;
@@ -174,11 +199,8 @@ body{
 /* botão roxo */
 .action-btn{
     background:linear-gradient(135deg,#7b4dff,#5a35d6);
-    color:white;
+    color:#333;
 }
-
-
-
 
 
 
@@ -190,6 +212,9 @@ body{
     object-fit:cover;
     display: block;
 }
+
+
+
 
 /* dropdown */
 
@@ -220,6 +245,7 @@ body{
 .dropdown-menu a:hover{
     background:#f3f3f3;
 }
+
 
 
 
