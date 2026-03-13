@@ -108,7 +108,7 @@ body{
 
     margin-top:3%;
     margin-left:4%;
-    margin-right:4%;
+    margin-right:4.5%;
 }
 
 /* área do título */
@@ -246,7 +246,7 @@ body{
 
     display:none;
     flex-direction:column;
-    transform: translateX(-38%);
+    transform: translateX(-43%);
 }
 
 .dropdown-menu a{
