@@ -152,22 +152,22 @@ body{
 }
 
 .input-group{
-    position:realtive;
+    position: relative;
 }
 
 .input-group input{
     width:100%;
-    padding:10px 15px 10px 55px;
-    border-radius:25px;
+    padding: 12px 80px 12px 55px;
+    border-radius:30px;
     border:none;
     
     background-color: #1f1f1f;
     color: #8a8a8a;
-    font-size: 18px;
+    font-size: 24px;
 }
 
 .search-icon{
-    color: #8a8a8a; 
+    color: #faebd7f1; 
 
     position:absolute;
     left: 16px;
@@ -211,8 +211,8 @@ body{
 /* botão roxo */
 .action-btn{
     background:linear-gradient(135deg,#7b4dff,#5a35d6);
-    color:#333;
-    padding-left: 7.4%;
+    color:#faebd7f1;
+    padding-left: 7%;
 }
 
 
