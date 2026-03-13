@@ -246,7 +246,7 @@ body{
 
     display:none;
     flex-direction:column;
-    transform: translateX(-10px);
+    transform: translateX(-38%);
 }
 
 .dropdown-menu a{
